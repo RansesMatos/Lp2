@@ -2,9 +2,9 @@ using system;
 using linq;
 using system.IOExceptions;
 
-namespace Modelo
+namespace Models
 {
-  public class Modelo
+  public class Vehiculo
   {
     public int Modelo_ID {get;set;}
     public string Nombre {get;set;}
