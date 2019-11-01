@@ -6,13 +6,13 @@ namespace DataCore
 {
     public class ComponentDefinition
     {
-        private int componentID { get; set; }
-        private string componentName { get; set; }
-        private string manufacturerName { get; set; }
-        private int partNo { get; set; }
-        private string comments { get; set; }
-        private int warrantyPeriod { get; set; }
-        private string productCode { get; set; }
-        private int unitPrice { get; set; }
+        public int componentID { get; set; }
+        public string componentName { get; set; }
+        public string manufacturerName { get; set; }
+        public int partNo { get; set; }
+        public string comments { get; set; }
+        public int warrantyPeriod { get; set; }
+        public string productCode { get; set; }
+        public int unitPrice { get; set; }
     }
 }

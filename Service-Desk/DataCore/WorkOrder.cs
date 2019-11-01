@@ -7,26 +7,26 @@ namespace DataCore
     public class WorkOrder
     {
         [Key] 
-        private int workOrderID { get; set; }
+        public int workOrderID { get; set; }
         [ForeignKey]
-        private int requesterID { get; set; }
+        public int requesterID { get; set; }
         [ForeignKey]
-        private int createdByID { get; set; }
-        private DateTime createdTime { get; set; }
-        private DateTime respondedTime { get; set; }
-        private DateTime dueTime { get; set; }
-        private DateTime lastUpdate { get; set; }
-        private DateTime completedTime { get; set; }
-        private int TimeSpentOn { get; set; }
+        public int createdByID { get; set; }
+        public DateTime createdTime { get; set; }
+        public DateTime respondedTime { get; set; }
+        public DateTime dueTime { get; set; }
+        public DateTime lastUpdate { get; set; }
+        public DateTime completedTime { get; set; }
+        public int TimeSpentOn { get; set; }
         [StringLength(50)]
-        private string Title { get; set; }
+        public string Title { get; set; }
         [StringLength(150)]
-        private string Description { get; set; }
+        public string Description { get; set; }
         [ForeignKey]
-        private int modeID { get; set; }
+        public int modeID { get; set; }
         [ForeignKey]
-        private int departmentID { get; set; }
-        private DateTime fr_DueTime { get; set; }
+        public int departmentID { get; set; }
+        public DateTime fr_DueTime { get; set; }
 
     }
 }

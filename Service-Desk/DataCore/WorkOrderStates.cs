@@ -9,21 +9,21 @@ namespace DataCore
     public class WorkOrderStates
     {
         [Key]
-        private int workOrderID { get; set; }
+        public int workOrderID { get; set; }
         [ForeignKey]
-        private int categoryID { get; set; }
+        public int categoryID { get; set; }
         [ForeignKey]
-        private int subcategoryID { get; set; }
+        public int subcategoryID { get; set; }
         [ForeignKey]
-        private int itemID { get; set; }
+        public int itemID { get; set; }
         [ForeignKey]
-        private int ownerID { get; set; }
-        private DateTime assignedTime { get; set; }
-        private int statusID { get; set; }
-        private int levelID { get; set; }
-        private bool isOverdue { get; set; }
-        private bool isEscalated { get; set; }
-        private bool isfrOverdue { get; set; }
-        private string resolution_Comments { get; set; }
+        public int ownerID { get; set; }
+        public DateTime assignedTime { get; set; }
+        public int statusID { get; set; }
+        public int levelID { get; set; }
+        public bool isOverdue { get; set; }
+        public bool isEscalated { get; set; }
+        public bool isfrOverdue { get; set; }
+        public string resolution_Comments { get; set; }
     }
 }

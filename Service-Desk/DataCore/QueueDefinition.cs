@@ -8,9 +8,9 @@ namespace DataCore
     class QueueDefinition
     {
         [Key]
-        private int queueID { get; set; }
+        public int queueID { get; set; }
         [MaxLength(50)]
-        private string queueName { get; set; }
+        public string queueName { get; set; }
 
     }
 }

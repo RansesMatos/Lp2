@@ -8,8 +8,8 @@ namespace DataCore
     public class ModeDefinition
     {
         [Key]
-        private int modeID { get; set; }
+        public int modeID { get; set; }
         [MaxLength(100)]
-        private string modeName { get; set; }
+        public string modeName { get; set; }
     }
 }

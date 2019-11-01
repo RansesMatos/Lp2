@@ -8,8 +8,8 @@ namespace DataCore
     public class StatusDefinition
     {
         [Key]
-        private int statusID { get; set; }
+        public int statusID { get; set; }
         [MaxLength(100)]
-        private string statusName { get; set; }
+        public string statusName { get; set; }
     }
 }

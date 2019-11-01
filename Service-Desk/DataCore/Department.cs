@@ -8,8 +8,8 @@ namespace DataCore
     public class Department
     {   
         [Key]
-        private int departmentID { get; set; }
+        public int departmentID { get; set; }
         [MaxLength(100)]
-        private string departmentName { get; set; }
+        public string departmentName { get; set; }
     }
 }
