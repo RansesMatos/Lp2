@@ -5,11 +5,11 @@ using System.Text;
 
 namespace DataCore
 {
-    public class Department
-    {   
+    public class StatusDefinition
+    {
         [Key]
-        private int departmentID { get; set; }
+        private int statusID { get; set; }
         [MaxLength(100)]
-        private string departmentName { get; set; }
+        private string statusName { get; set; }
     }
 }
