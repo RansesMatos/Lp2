@@ -10,7 +10,7 @@ namespace DataCore
     {
         [Key]
         public int subcategoryID { get; set; }
-        [ForeignKey]
+        [ForeignKey("")]
         public int categoryID { get; set; }
         public string name { get; set; }
     }

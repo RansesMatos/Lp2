@@ -8,9 +8,9 @@ namespace DataCore
     {
         [Key] 
         public int workOrderID { get; set; }
-        [ForeignKey]
+        [ForeignKey("")]
         public int requesterID { get; set; }
-        [ForeignKey]
+        [ForeignKey("")]
         public int createdByID { get; set; }
         public DateTime createdTime { get; set; }
         public DateTime respondedTime { get; set; }
@@ -22,9 +22,9 @@ namespace DataCore
         public string Title { get; set; }
         [StringLength(150)]
         public string Description { get; set; }
-        [ForeignKey]
+        [ForeignKey("")]
         public int modeID { get; set; }
-        [ForeignKey]
+        [ForeignKey("")]
         public int departmentID { get; set; }
         public DateTime fr_DueTime { get; set; }
 

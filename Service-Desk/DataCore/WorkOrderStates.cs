@@ -10,13 +10,13 @@ namespace DataCore
     {
         [Key]
         public int workOrderID { get; set; }
-        [ForeignKey]
+        [ForeignKey("")]
         public int categoryID { get; set; }
-        [ForeignKey]
+        [ForeignKey("")]
         public int subcategoryID { get; set; }
-        [ForeignKey]
+        [ForeignKey("")]
         public int itemID { get; set; }
-        [ForeignKey]
+        [ForeignKey("")]
         public int ownerID { get; set; }
         public DateTime assignedTime { get; set; }
         public int statusID { get; set; }
