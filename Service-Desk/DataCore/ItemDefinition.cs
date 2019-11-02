@@ -6,12 +6,13 @@ using System.Text;
 
 namespace DataCore
 {
-    public class SubCategoryDefinition
+    public class ItemDefinition
+    
     {
         [Key]
+        public int itemID { get; set; }
+        [ForeignKey("SubCategoryDefinition")]
         public int subcategoryID { get; set; }
-        [ForeignKey("CategoryDefinition")]
-        public int categoryID { get; set; }
         public string name { get; set; }
     }
 }

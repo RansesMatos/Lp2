@@ -8,15 +8,15 @@ namespace DataCore
 {
     public class WorkOrderStates
     {
-        [Key]
+        [ForeignKey("WorkOrder")]
         public int workOrderID { get; set; }
-        [ForeignKey("")]
+        [ForeignKey("CategoryDefinition")]
         public int categoryID { get; set; }
-        [ForeignKey("")]
+        [ForeignKey("SubCategoryDefinition")]
         public int subcategoryID { get; set; }
-        [ForeignKey("")]
+        [ForeignKey("ItemDefinition")]
         public int itemID { get; set; }
-        [ForeignKey("")]
+        [ForeignKey("AaaUser")]
         public int ownerID { get; set; }
         public DateTime assignedTime { get; set; }
         public int statusID { get; set; }
