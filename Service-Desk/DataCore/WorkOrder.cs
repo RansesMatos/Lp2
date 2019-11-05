@@ -10,7 +10,7 @@ namespace DataCore
         public int workOrderID { get; set; }
         [ForeignKey("Request")]
         public int requesterID { get; set; }
-        [ForeignKey("")]
+        [ForeignKey("AaaUser")]
         public int createdByID { get; set; }
         public DateTime createdTime { get; set; }
         public DateTime respondedTime { get; set; }
